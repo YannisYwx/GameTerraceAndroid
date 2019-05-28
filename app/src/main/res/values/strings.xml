@@ -1,0 +1,222 @@
+<resources>
+    <string name="app_name">34999</string>
+    <!-- 共享过度动画 -->
+    <string name="transition_photos">transition_animation_news_photos</string>
+    <string name="lorem">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula sem a malesuada rhoncus. Pellentesque ut dolor a dui porttitor porta lacinia non libero. Nunc volutpat arcu quis quam convallis molestie. Etiam ac tristique sem, id commodo justo. Phasellus congue tincidunt lectus, at dignissim ligula maximus eu. Quisque interdum nunc eget tellus bibendum suscipit. Phasellus feugiat ultricies posuere. Nullam porta accumsan velit, ut rutrum massa fermentum eu. Nunc ac bibendum nunc. Mauris eu ultricies ipsum. Ut id dolor dui. Pellentesque dictum dui vel tempus maximus. Vivamus non nisi quis libero scelerisque pretium. Ut eu tristique justo. Sed pellentesque placerat quam, ut ultricies turpis feugiat a. Aliquam a volutpat risus.
+
+Praesent at lectus semper, suscipit elit in, facilisis massa. Phasellus sed vestibulum ante, a euismod sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin tincidunt orci augue, a porta odio lacinia eu. Nunc in congue risus. Maecenas commodo nibh ac enim fermentum, eu sagittis massa blandit. Vestibulum elementum massa nec dapibus mollis. Etiam porta, est sit amet aliquet porta, odio elit finibus risus, id rutrum purus mi non ipsum. Nulla viverra nec enim sed venenatis.
+
+Maecenas mattis, erat et viverra euismod, neque diam porttitor tellus, in fringilla metus est id augue. Nunc at metus cursus, porttitor nisi vitae, congue diam. Curabitur ligula massa, ullamcorper eget scelerisque vel, pharetra ac sapien. Ut auctor luctus ultricies. Nullam semper tortor ac elementum luctus. In et tempus ex. Praesent sodales, dolor id volutpat elementum, ligula enim euismod odio, maximus sodales magna neque nec neque. Curabitur pretium nisl neque, consequat aliquet dui tincidunt ac. Vivamus augue nunc, aliquet eu ex a, ultrices aliquam lorem. Duis nibh lectus, ultricies vel iaculis sit amet, imperdiet id sapien. Duis scelerisque sodales metus eu rutrum. Suspendisse posuere nisi ac magna consequat, eu vestibulum ipsum venenatis. Suspendisse auctor nisi nec leo venenatis tristique.
+
+Praesent tincidunt lorem sit amet mi consequat cursus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent vitae blandit sapien. Curabitur est sapien, lobortis sit amet facilisis vel, faucibus eu quam. Nam tempus libero at tellus tempor laoreet. Pellentesque quam lorem, tincidunt in molestie eget, dictum vel risus. Nunc gravida convallis mattis.
+    </string>
+    <!--Main-->
+    <string name="main_tab_home">首页</string>
+    <string name="main_tab_classify">分类</string>
+    <string name="main_tab_ranking">排行榜</string>
+    <string name="main_tab_news">资讯</string>
+    <string name="main_tab_gift">礼包</string>
+    <string name="main_tab_me">我的</string>
+
+    <!--登录 注册 忘记密码-->
+    <string name="account">账 号：</string>
+    <string name="password">密 码：</string>
+    <string name="immediatelyLogin">立即登录</string>
+    <string name="fastRegister">快速注册</string>
+    <string name="forgetPwd">忘记密码?</string>
+    <string name="phoneNum">手机号：</string>
+    <string name="affirmPwd">确认密码：</string>
+    <string name="verificationCode">验证码：</string>
+    <string name="getVerificationCode">获取验证码：</string>
+    <string name="invitationCode">邀请码：</string>
+    <string name="tipRegister">没有此项可以不填</string>
+    <string name="resetPwd">重置密码</string>
+
+    <string-array name="msg">
+        <item>系统消息</item>
+        <item>活动消息</item>
+    </string-array>
+
+    <!--主页-->
+    <string name="home_newGame">新游</string>
+    <string name="home_openService">开服</string>
+    <string name="home_rankingList">排行榜</string>
+    <string name="home_gameSelection">游戏精选</string>
+    <string name="home_makeMoney">赚钱</string>
+    <string name="home_gameRecommend">必玩推荐</string>
+    <string name="home_change">换一换</string>
+    <string name="home_hotGame">热门游戏</string>
+    <string name="hot">热门推荐</string>
+
+
+    <!--分类-->
+    <string-array name="game_classify">
+        <item>飞行射击</item>
+        <item>休闲益智</item>
+        <item>体育竞技</item>
+        <item>模拟经营</item>
+        <item>格斗动作</item>
+        <item>棋牌桌游</item>
+        <item>策略塔防</item>
+        <item>角色扮演</item>
+    </string-array>
+
+    <string name="classify_STG">飞行射击</string>
+    <string name="classify_leisurePuzzle">休闲益智</string>
+    <string name="classify_sportsCompetition">体育竞技</string>
+    <string name="classify_rolePlay">角色扮演</string>
+    <string name="classify_act">格斗动作</string>
+    <string name="classify_chess">棋牌天地</string>
+    <string name="classify_sim">模拟经营</string>
+    <string name="classify_towerDefense">策略塔防</string>
+
+    <string-array name="classify_STG">
+        <item>飞机</item>
+        <item>坦克</item>
+        <item>太空</item>
+        <item>射击</item>
+        <item>反恐</item>
+        <item>使命</item>
+    </string-array>
+
+
+    <!--排行榜-->
+    <string name="ranking_synthesize">综合榜</string>
+    <string name="ranking_dyGame">网游榜</string>
+    <string name="ranking_standAlone">单机榜</string>
+    <string name="ranking_newGame">新游榜</string>
+    <string-array name="ranking_list_title">
+        <item>综合榜</item>
+        <item>网游榜</item>
+        <item>单机榜</item>
+        <item>新游榜</item>
+    </string-array>
+    <!--礼包-->
+    <string name="gift_center">礼包中心</string>
+    <string name="gift_myGift">我的礼包</string>
+    <string name="gift_giftAll">礼包全集</string>
+    <string name="gift_recommend">推荐游戏礼包</string>
+    <string name="gift_copy">复制</string>
+    <!--我的-->
+    <string name="me_recharge">我要充值</string>
+    <string name="me_credits">我的积分</string>
+    <string name="me_game">我的游戏</string>
+    <string name="me_gift">我的礼包</string>
+    <string name="me_feedback">意见反馈</string>
+    <string name="get_credits_exchange">赚取和兑换</string>
+    <string name="submit_feedback">提交意见</string>
+    <!-- 设置 -->
+    <string name="settings_mobileNetworkNoLoad">移动网络不加载大图</string>
+    <string name="settings_msgRemind">消息提醒</string>
+    <string name="settings_downloadFinishToInstall">下载完成提示安装</string>
+    <string name="settings_deleteSourceFile">删除安装源文件</string>
+    <string name="settings_checkUpdate">检查更新</string>
+    <string name="settings_aboutUs">关于软件</string>
+
+    <!--赚钱-->
+    <string name="makeMoney_todayIncome">今日收入(元)</string>
+    <string name="makeMoney_accountBalance">账户余额(元)</string>
+    <string name="makeMoney_totalCredits">合计积分</string>
+    <string name="makeMoney_info">多种方式赚积分，100积分=1元钱，还能兑换游戏币、话费、流量、实物！</string>
+    <string name="makeMoney_task_singIn">每日签到</string>
+    <string name="makeMoney_task_payGame">试玩游戏赚积分</string>
+    <string name="makeMoney_task_luckDraw">幸运抽奖</string>
+    <string name="makeMoney_task_exchange">精彩兑换</string>
+    <string name="makeMoney_task_inviteFriends">邀请好友</string>
+
+    <string name="makeMoney_task_singInInfo">连续签到，积分每天都不同</string>
+    <string name="makeMoney_task_payGameInfo">大量精品游戏，试玩就有积分赚</string>
+    <string name="makeMoney_task_luckDrawInfo">小小积分还能赢大奖</string>
+    <string name="makeMoney_task_exchangeInfo">小小积分还能兑换游戏币、话费、实物</string>
+    <string name="makeMoney_task_inviteFriendsInfo">邀请好友一起来玩游戏，还有积分赚哦！</string>
+
+    <!--用户中心-->
+    <string name="userInfo_nickName">昵称</string>
+    <string name="userInfo_sex">性别</string>
+    <string name="userInfo_birthday">生日</string>
+    <string name="userInfo_phoneNum">手机号码</string>
+    <string name="userInfo_address">管理地址</string>
+    <string name="userInfo_clickToModify">点击修改头像</string>
+    <string-array name="sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <!--标题-->
+    <string name="title_userInfo">个人资料</string>
+    <string name="title_gameZone">游戏专区</string>
+    <string name="title_make_money">赚钱</string>
+    <string name="title_giftBag">我的礼包</string>
+    <string name="title_userComment">用户评论</string>
+    <string name="title_openService">开服开测</string>
+    <string name="title_more">更多</string>
+    <string name="title_newGame">新游</string>
+    <string name="title_downloadManage">下载管理</string>
+    <string name="title_settingRemind">我的设置提醒</string>
+    <string name="title_ranklist">排行榜</string>
+    <string name="title_myGiftBag">我的礼包</string>
+    <string name="title_information">资讯</string>
+    <string name="title_gameSelection">游戏精选</string>
+    <string name="title_gameSelectionDetail">精选详情</string>
+    <string name="title_search">搜索</string>
+    <string name="title_message">消息</string>
+    <string name="title_myCredits">我的积分</string>
+    <string name="title_feedback">意见反馈</string>
+    <string name="title_settings">设置</string>
+
+    <!--游戏专区-->
+    <string-array name="gameZoom">
+        <item>详情</item>
+        <item>礼包</item>
+        <item>攻略</item>
+        <item>资讯</item>
+    </string-array>
+    <string name="game_recommend">相关游戏推荐</string>
+    <string name="game_userComment">用户评论</string>
+    <string name="iComment">我要评价</string>
+    <string name="fixed_tag">fixed</string>
+
+    <!--开服开测-->
+    <string name="today">今天</string>
+    <string name="history">历史</string>
+    <string name="nextThreeDays">未来三天</string>
+    <string name="setting_remind">设置提醒</string>
+    <string-array name="openService_openTest">
+        <item>开服表</item>
+        <item>开测表</item>
+    </string-array>
+
+    <!-- 资讯 -->
+    <string-array name="informationArray">
+        <item>首页</item>
+        <item>新闻</item>
+        <item>动态</item>
+        <item>视频</item>
+        <item>攻略</item>
+        <item>数据</item>
+        <item>测评</item>
+        <item>专访</item>
+    </string-array>
+
+    <!-- 我的设置提醒 -->
+
+    <!--common-->
+    <string name="download">下载</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="more">更多</string>
+    <string name="settings">设置</string>
+    <string name="remind">提醒</string>
+    <string name="tested">已测试</string>
+    <string name="delete">删除</string>
+    <string name="pause">暂停</string>
+    <string name="install">安装</string>
+    <string name="goOn">继续</string>
+    <string name="edit">编辑</string>
+    <string name="checkAll">全选</string>
+    <string name="searchHistory">历史搜索</string>
+    <string name="hotSearch">热门搜索</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+</resources>

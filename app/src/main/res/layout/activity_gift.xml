@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_gameIcon"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/default_game_icon"/>
+
+    <TextView
+        android:id="@+id/tv_gameName"
+        style="@style/ItemTitleTextStyle"
+        android:layout_marginTop="8dp"
+        android:text="诛仙"/>
+
+    <TextView
+        android:id="@+id/tv_gameInfo"
+        style="@style/ItemInfoTextStyle"
+        android:layout_marginTop="8dp"
+        android:text="54.3万下载  |  180.9M  |  角色扮演"
+        android:layout_marginBottom="12dp"/>
+
+    <include layout="@layout/view_divider_thick"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_gameGift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentaion.ui.main.activity.ForgetPwdActivity">
+
+    <com.yuemai.game34999.presentaion.widget.NormalEditText
+        android:id="@+id/net_phoneNum"
+        style="@style/NormalEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:inputType="visible_psw"
+        app:isdeletable="true"
+        app:text="@string/phoneNum" />
+
+    <!--验证码-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="@string/verificationCode"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_middle_size" />
+
+        <TextView
+            android:id="@+id/tv_getCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:padding="10dp"
+            android:text="@string/getVerificationCode" />
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_getCode"
+            android:layout_toRightOf="@id/tv_getCode"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="@dimen/text_middle_size" />
+    </RelativeLayout>
+
+    <com.yuemai.game34999.presentaion.widget.NormalEditText
+        android:id="@+id/net_pwd"
+        style="@style/NormalEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:isPswIcon="true"
+        app:isdeletable="true"
+        app:text="@string/password" />
+
+    <com.yuemai.game34999.presentaion.widget.NormalEditText
+        android:id="@+id/net_r_pwd"
+        style="@style/NormalEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:isPswIcon="true"
+        app:isdeletable="true"
+        app:text="@string/affirmPwd" />
+
+    <Button
+        android:id="@+id/btn_register"
+        style="@style/NormalButton"
+        android:layout_marginTop="115dp"
+        android:text="@string/resetPwd" />
+</LinearLayout>

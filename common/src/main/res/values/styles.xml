@@ -1,0 +1,45 @@
+<resources>
+
+    <style name="FadeInPopWin">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="@android:windowEnterAnimation">@anim/pop_win_content_fade_in</item>
+        <item name="@android:windowExitAnimation">@anim/pop_win_content_fade_out</item>
+    </style>
+
+    <style name="TagGroupLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="tgl_isAppendMode">false</item>
+        <item name="tgl_inputHint">@string/add_tag</item>
+        <item name="tgl_borderColor">#49C120</item>
+        <item name="tgl_textColor">#49C120</item>
+        <item name="tgl_backgroundColor">#FFFFFF</item>
+        <item name="tgl_dashBorderColor">#AAAAAA</item>
+        <item name="tgl_inputHintColor">#80000000</item>
+        <item name="tgl_inputTextColor">#DE000000</item>
+        <item name="tgl_checkedBorderColor">#49C120</item>
+        <item name="tgl_checkedTextColor">#FFFFFF</item>
+        <item name="tgl_checkedMarkerColor">#FFFFFF</item>
+        <item name="tgl_checkedBackgroundColor">#49C120</item>
+        <item name="tgl_pressedBackgroundColor">#EDEDED</item>
+        <item name="tgl_borderStrokeWidth">0.5dp</item>
+        <item name="tgl_textSize">14sp</item>
+        <item name="tgl_horizontalSpacing">12dp</item>
+        <item name="tgl_verticalSpacing">10dp</item>
+        <item name="tgl_horizontalPadding">12dp</item>
+        <item name="tgl_verticalPadding">6dp</item>
+    </style>
+
+    <style name="gif_dialog"
+        parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+</resources>

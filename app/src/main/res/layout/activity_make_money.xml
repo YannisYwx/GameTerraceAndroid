@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:yannis="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/makemoney_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/makeMoney_todayIncome"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="0.00"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:background="@android:color/white"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/makeMoney_accountBalance"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="583678.01"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:background="@android:color/white"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/makeMoney_totalCredits"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="0.00"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gapBg"
+        android:padding="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/white"
+            android:paddingBottom="14dp"
+            android:paddingRight="5dp"
+            android:paddingTop="14dp">
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="16dp"
+                android:src="@drawable/makemoney_icon_bulb"
+                />
+
+            <TextView
+                android:id="@+id/tv_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_icon"
+                android:text="@string/makeMoney_info"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.yuemai.game34999.presentaion.widget.ItemInfoView
+        android:id="@+id/iiv_singIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        yannis:hasBottomLine="true"
+        yannis:icon="@drawable/makemoney_icon_check"
+        yannis:info="@string/makeMoney_task_singInInfo"
+        yannis:title="@string/makeMoney_task_singIn"/>
+
+    <com.yuemai.game34999.presentaion.widget.ItemInfoView
+        android:id="@+id/iiv_inviteFriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        yannis:hasBottomLine="true"
+        yannis:icon="@drawable/makemoney_icon_invite"
+        yannis:info="@string/makeMoney_task_inviteFriendsInfo"
+        yannis:title="@string/makeMoney_task_inviteFriends"/>
+
+    <com.yuemai.game34999.presentaion.widget.ItemInfoView
+        android:id="@+id/iiv_payGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        yannis:hasBottomLine="true"
+        yannis:icon="@drawable/makemoney_icon_make"
+        yannis:info="@string/makeMoney_task_payGameInfo"
+        yannis:title="@string/makeMoney_task_payGame"/>
+
+    <com.yuemai.game34999.presentaion.widget.ItemInfoView
+        android:id="@+id/iiv_exchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        yannis:hasBottomLine="true"
+        yannis:icon="@drawable/makemoney_icon_exchage"
+        yannis:info="@string/makeMoney_task_exchangeInfo"
+        yannis:title="@string/makeMoney_task_exchange"/>
+
+    <com.yuemai.game34999.presentaion.widget.ItemInfoView
+        android:id="@+id/iiv_draw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        yannis:hasBottomLine="true"
+        yannis:icon="@drawable/makemoney_icon_draw"
+        yannis:info="@string/makeMoney_task_luckDrawInfo"
+        yannis:title="@string/makeMoney_task_luckDraw"/>
+</LinearLayout>

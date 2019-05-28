@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.yuemai.game34999.widget.tabstrip.PagerSlidingTabStrip
+        android:background="@color/white"
+        android:id="@+id/activity_sort_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:pstsDividerColor="@color/silver"
+        app:pstsIndicatorColor="@color/themeBlue"
+        app:pstsIndicatorHeight="3dp"
+        app:pstsShouldExpand="false"
+        app:pstsTextSelectedColor="@color/themeBlue"
+        app:pstsUnderlineColor="@color/gapBg" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_sort_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

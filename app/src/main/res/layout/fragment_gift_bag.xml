@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <!--自定义状态栏 高度-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/white"/>
+
+    <com.yannis.common.widget.TitleBar
+        android:id="@+id/view_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        app:centerMode="title"
+        app:centerTitle="@string/title_giftBag"
+        app:rtText="@string/gift_myGift"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_gift_bag_recommend"/>
+
+            <com.yannis.common.widget.NestedGridView
+                android:id="@+id/gv_gift_bag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:horizontalSpacing="12dp"
+                android:numColumns="2"
+                android:verticalSpacing="12dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

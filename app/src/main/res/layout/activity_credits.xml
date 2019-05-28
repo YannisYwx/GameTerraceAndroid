@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F6F6">
+    <TextView
+        android:id="@+id/tv_credits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="15dp"
+        android:textSize="25sp"
+        android:text="1983"
+        android:textColor="#282828"
+        android:drawableLeft="@drawable/icon_mypoints"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:drawablePadding="10dp"
+        android:background="@color/white"/>
+    <TextView
+        android:id="@+id/tv_getCreditsExchange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="15dp"
+        android:textSize="14sp"
+        android:text="@string/get_credits_exchange"
+        android:textColor="#282828"
+        android:background="@color/white"
+        android:drawableEnd="@drawable/icon_arrow"/>
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="92dp"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <FrameLayout
+        android:id="@+id/fl_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        >
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@id/fl_left"
+        android:src="@drawable/default_game_icon"/>
+
+    <TextView
+        android:id="@+id/tv_top"
+        style="@style/ItemTitleTextStyle"
+        android:layout_above="@+id/tv_middle"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:text="王者荣耀"/>
+
+    <TextView
+        android:id="@+id/tv_middle"
+        style="@style/ItemInfoTextStyle"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:text="54.3万下载 180.9M"
+        />
+    <TextView
+        android:id="@+id/tv_downloadSpeed"
+        style="@style/ItemInfoTextStyle"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/fl_buttons"
+        android:layout_toRightOf="@+id/tv_middle"
+        android:gravity="right"
+        android:textColor="@color/notice_text_color"
+        android:visibility="visible"
+        />
+    <TextView
+        android:id="@+id/tv_bottom"
+        style="@style/ItemInfoTextStyle"
+        android:layout_below="@+id/tv_middle"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/tv_right"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:lines="1"
+        android:visibility="invisible"
+        android:text="猎杀联盟为“乐七”游戏研究所研发轻度的轻游戏研究所研发轻度的轻"
+        />
+
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/fl_buttons"
+        android:text="@string/delete"
+        android:textColor="@color/themeBluePre"
+        android:textSize="12sp"/>
+
+    <ProgressBar
+        android:id="@+id/pb_download"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="188dp"
+        android:layout_height="6dp"
+        android:layout_below="@+id/tv_middle"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:progressTint="@color/progress_color"
+        android:max="100"
+        android:progress="10"
+        android:visibility="visible"/>
+    <FrameLayout
+        android:id="@+id/fl_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp">
+
+        <com.yuemai.game34999.presentaion.widget.DownloadProgressButton
+            android:id="@+id/btn_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="3dp"
+            android:text="@string/download"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_middle_size"
+            app:background_color="@color/themeBlue"
+            app:background_second_color="#fff"
+            app:background_strokeWidth="1dp"
+            app:radius="15dp"
+            app:text_color="@color/themeBlue"
+            app:text_cover_color="#fff"
+            android:visibility="visible"
+            />
+
+        <Button
+            android:id="@+id/btn_normal"
+            android:layout_width="58dp"
+            android:layout_height="26dp"
+            android:background="@drawable/btn_orange"
+            android:text="@string/remind"
+            android:textColor="@color/btn_text_color_orange"
+            android:textSize="13sp"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_middle_size"
+            android:visibility="gone" />
+    </FrameLayout>
+</RelativeLayout>

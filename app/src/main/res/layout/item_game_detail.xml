@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_gamePic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="13dp"></android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_gameInfo"
+        style="@style/ItemInfoTextStyle"
+        android:layout_below="@+id/rv_gamePic"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:lines="2"
+        android:text="《捕鱼达人3》是触控科技旗下捕鱼系列游戏全新一代产品，cocos2d-x3.0引擎打造全新3D画面，革命性创新玩法带来颠覆体验。2014年国民级休闲手游全球震撼上线，全民捕鱼欢乐升级，人人都是捕鱼达人！" />
+
+    <TextView
+        android:id="@+id/tv_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_gameInfo"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="5dp"
+        android:drawablePadding="2dp"
+        android:drawableRight="@drawable/icon_up"
+        android:text="展开"
+        android:textColor="@color/themeBlue"
+        android:textSize="12sp" />
+
+    <include
+        android:id="@+id/view_divider"
+        layout="@layout/view_divider_thick"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_dividerHeight"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_open" />
+    <!--头-->
+    <com.yuemai.game34999.presentaion.widget.ClassifyView
+        android:id="@+id/cv_related_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_divider"
+        app:cv_leftText="@string/game_recommend"
+        app:cv_rightText="@string/more"
+        app:cv_rightTextDrawable="@drawable/icon_more" />
+
+    <LinearLayout
+        android:id="@+id/s"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cv_related_recommend"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:src="@drawable/default_game_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="王者荣耀"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:src="@drawable/default_game_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="王者荣耀"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:src="@drawable/default_game_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="王者荣耀"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:src="@drawable/default_game_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="王者荣耀"
+                android:textColor="@color/text_black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/view_divider1"
+        layout="@layout/view_divider_thick"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_dividerHeight"
+        android:layout_below="@+id/s" />
+    <!--头-->
+    <com.yuemai.game34999.presentaion.widget.ClassifyView
+        android:id="@+id/cv_user_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_divider1"
+        app:cv_leftText="@string/game_userComment"
+        app:cv_rightText="@string/more"
+        app:cv_rightTextDrawable="@drawable/icon_more" />
+</RelativeLayout>

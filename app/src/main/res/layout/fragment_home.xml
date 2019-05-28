@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.yuemai.game34999.presentaion.widget.FixedChildScrollView
+        android:id="@+id/sv_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:orientation="vertical"
+            >
+
+            <com.yannis.common.widget.banner.view.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:clipChildren="false"
+                app:viewPager_marginLeftRight="20dp"
+                app:indicator_height="4dp"
+                app:indicator_width="8dp"
+                app:indicator_drawable_selected="@drawable/indicator_selected"
+                app:indicator_drawable_unselected="@drawable/indicator_unselected"
+                app:is_auto_play="true"/>
+
+            <include
+                layout="@layout/layout_home_module"/>
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/refreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srlAccentColor="@android:color/white"
+                app:srlEnableHeaderTranslationContent="true"
+                app:srlEnableLoadmore="false"
+                app:srlPrimaryColor="@color/colorPrimary"
+                android:descendantFocusability="blocksDescendants">
+                <com.scwang.smartrefresh.layout.header.BezierRadarHeader
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="blocksDescendants">
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        </LinearLayout>
+    </com.yuemai.game34999.presentaion.widget.FixedChildScrollView>
+
+    <include layout="@layout/layout_home_top"/>
+</FrameLayout>

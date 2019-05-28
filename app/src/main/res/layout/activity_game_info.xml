@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:gravity="center_vertical"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/iv_gift_gameIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/default_game_icon"
+            />
+
+        <TextView
+            android:id="@+id/tv_gift_gameName"
+            style="@style/ItemTitleTextStyle"
+            android:layout_toRightOf="@+id/iv_gift_gameIcon"
+            android:text="捕鱼达人"
+            />
+
+        <TextView
+            android:id="@+id/tv_gift_gameInfo"
+            style="@style/ItemInfoTextStyle"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_gift_gameIcon"
+            android:text="214.08M | 1.5.0 | 630万次下载"
+            />
+
+        <TextView
+            android:id="@+id/tv_gift_gameType"
+            style="@style/ItemInfoTextStyle"
+            android:layout_below="@+id/tv_gift_gameInfo"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/iv_gift_gameIcon"
+            android:text="益智休闲"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/view_divider_thick"/>
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/mi_gameZoomTab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_navigator_height"
+        android:layout_gravity="center_horizontal"
+        app:hasBottomLine="true"/>
+    <include layout="@layout/view_divider_slender"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_gameZoom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <include layout="@layout/view_divider_slender"/>
+
+    <Button
+        android:id="@+id/btn_download"
+        style="@style/NormalButton"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/download"/>
+</LinearLayout>

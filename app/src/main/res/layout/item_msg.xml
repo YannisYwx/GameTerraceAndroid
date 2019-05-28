@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+
+    >
+    <TextView
+        android:id="@+id/tv_msg_title"
+        android:layout_marginTop="12dp"
+        style="@style/ItemTitleTextStyle"
+        android:text="又有一波任务来袭，强势围观" />
+    <TextView
+        android:id="@+id/tv_msg_info"
+        style="@style/ItemInfoTextStyle"
+        android:text="2017-11-29 08:08"
+        android:layout_below="@+id/tv_msg_title"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dividerHeightThick"
+        android:background="@color/gapBg"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

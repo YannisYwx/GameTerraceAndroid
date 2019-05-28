@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:tag="@string/fixed_tag"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/tv_newGame"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="3dp"
+        android:drawableTop="@mipmap/home_newgame"
+        android:gravity="center_horizontal"
+        android:text="@string/home_newGame"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/top_mini_size"/>
+
+    <TextView
+        android:id="@+id/tv_openService"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="3dp"
+        android:drawableTop="@mipmap/home_open"
+        android:gravity="center_horizontal"
+        android:text="@string/home_openService"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/top_mini_size"/>
+
+    <TextView
+        android:id="@+id/tv_rankingList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="3dp"
+        android:drawableTop="@mipmap/home_ranklist"
+        android:gravity="center_horizontal"
+        android:text="@string/home_rankingList"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/top_mini_size"/>
+
+    <TextView
+        android:id="@+id/tv_gameSelection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="3dp"
+        android:drawableTop="@mipmap/home_selection"
+        android:gravity="center_horizontal"
+        android:text="@string/home_gameSelection"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/top_mini_size"/>
+
+    <TextView
+        android:id="@+id/tv_makeMoney"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="3dp"
+        android:drawableTop="@mipmap/home_makemoney"
+        android:gravity="center_horizontal"
+        android:text="@string/home_makeMoney"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/top_mini_size"/>
+</LinearLayout>

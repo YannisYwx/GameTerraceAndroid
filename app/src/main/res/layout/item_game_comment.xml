@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="vertical"
+    android:paddingTop="14dp">
+
+    <TextView
+        android:id="@+id/tv_commentUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:text="LALALALA"
+        android:textColor="@color/themeBlue"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/tv_comment"
+        style="@style/CommentTestStyle"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tv_commentUserName"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="11dp"
+        android:layout_toLeftOf="@+id/tv_like"
+        android:text="非常不错，鱼很好打。。。"/>
+
+    <TextView
+        android:id="@+id/tv_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_comment"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:drawableLeft="@drawable/like_selector"
+        android:drawablePadding="5dp"
+        android:text="5"
+        android:textColor="@color/textGray"
+        android:textSize="11sp"/>
+
+    <TextView
+        android:id="@+id/tv_publishTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:text="2017-09-30 18:30:45"
+        android:textColor="@color/textGray"
+        android:textSize="11sp"/>
+
+    <View
+        android:layout_below="@+id/tv_like"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dividerHeight"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/list_divider"
+        />
+</RelativeLayout>

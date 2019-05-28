@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="77dp">
+
+        <com.yannis.common.widget.ItemView
+            android:id="@+id/iv_userHeader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:layout_centerVertical="true"
+            android:background="@drawable/comm_list_selector"
+            app:hasBottomLine="false"
+            app:labelColor="@color/text_black"
+            app:lineColor="@color/dividerColor"
+            app:value="@string/userInfo_clickToModify" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_userInfo_header"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/default_header" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_divider_thick" />
+
+    <com.yannis.common.widget.ItemView
+        android:id="@+id/iv_nickName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/comm_list_selector"
+        app:hasBottomLine="true"
+        app:label="@string/userInfo_nickName"
+        app:labelColor="@color/text_black"
+        app:lineColor="@color/dividerColor"
+        app:value="Yannis" />
+
+    <com.yannis.common.widget.ItemView
+        android:id="@+id/iv_sex"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/comm_list_selector"
+        app:hasBottomLine="true"
+        app:label="@string/userInfo_sex"
+        app:labelColor="@color/text_black"
+        app:lineColor="@color/dividerColor"
+        app:value="男" />
+
+    <com.yannis.common.widget.ItemView
+        android:id="@+id/iv_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/comm_list_selector"
+        app:hasBottomLine="true"
+        app:label="@string/userInfo_birthday"
+        app:labelColor="@color/text_black"
+        app:lineColor="@color/dividerColor"
+        app:value="1990-11-15" />
+
+    <com.yannis.common.widget.ItemView
+        android:id="@+id/iv_phoneNum"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/comm_list_selector"
+        app:hasBottomLine="true"
+        app:label="@string/userInfo_phoneNum"
+        app:labelColor="@color/text_black"
+        app:lineColor="@color/dividerColor"
+        app:value="1591835035" />
+
+    <com.yannis.common.widget.ItemView
+        android:id="@+id/iv_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/comm_list_selector"
+        android:visibility="gone"
+        app:hasBottomLine="true"
+        app:label="@string/userInfo_address"
+        app:labelColor="@color/text_black"
+        app:lineColor="@color/dividerColor"
+        app:value="深圳南山西丽茶光" />
+</LinearLayout>

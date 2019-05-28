@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_divider_thick"/>
+
+    <com.yuemai.game34999.presentaion.widget.ClassifyView
+        android:id="@+id/cv_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cv_leftText="@string/home_gameRecommend"
+        app:cv_rightText="@string/home_change"
+        app:cv_rightTextDrawable="@mipmap/icon_change">
+
+    </com.yuemai.game34999.presentaion.widget.ClassifyView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <com.yuemai.game34999.presentaion.widget.ApkInfoCardView
+            android:id="@+id/acv_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:apkCapacity="600.3M"
+            app:apkIcon="@drawable/default_game_icon"
+            app:apkName="龙之谷手游"/>
+
+        <com.yuemai.game34999.presentaion.widget.ApkInfoCardView
+            android:id="@+id/acv_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:apkCapacity="600.3M"
+            app:apkIcon="@drawable/default_game_icon"
+            app:apkName="龙之谷手游"/>
+
+        <com.yuemai.game34999.presentaion.widget.ApkInfoCardView
+            android:id="@+id/acv_third"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:apkCapacity="600.3M"
+            app:apkIcon="@drawable/default_game_icon"
+            app:apkName="龙之谷手游"/>
+
+        <com.yuemai.game34999.presentaion.widget.ApkInfoCardView
+            android:id="@+id/acv_four"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:apkCapacity="600.3M"
+            app:apkIcon="@drawable/default_game_icon"
+            app:apkName="龙之谷手游"/>
+    </LinearLayout>
+</LinearLayout>

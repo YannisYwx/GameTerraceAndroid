@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <EditText
+            android:id="@+id/ed_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/search_bg"
+            android:drawableLeft="@mipmap/nav_search"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:hint="@string/title_search"
+            android:paddingBottom="4dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp"
+            android:textColorHint="@color/text_gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/cancel"
+            android:textColor="@color/themeBluePre"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dividerHeightThick"
+        android:background="@color/gapBg"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:id="@+id/rl_searchHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/searchHistory"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/icon_delete" />
+
+    </RelativeLayout>
+
+    <com.yuemai.game34999.presentaion.widget.FlowLayout
+        android:id="@+id/fl_searchHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <com.yannis.common.widget.TagGroupLayout
+        android:id="@+id/tgl_history"
+        style="@style/TagGroupLayout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/hotSearch"
+        android:textColor="@color/text_black"
+        android:textSize="14sp" />
+
+    <com.yuemai.game34999.presentaion.widget.FlowLayout
+        android:id="@+id/fl_hotSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <com.yannis.common.widget.TagGroupLayout
+        android:id="@+id/tgl_hot"
+        style="@style/TagGroupLayout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+</LinearLayout>

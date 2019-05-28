@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="106dp"
+                android:background="@drawable/comm_list_selector"
+                android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_gameGiftBagTitle"
+        style="@style/ItemTitleTextStyle"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:lines="1"
+        android:text="《捕鱼达人3》520特权礼包"
+        />
+
+    <ProgressBar
+        android:id="@+id/pb_gift"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="6dp"
+        android:layout_below="@+id/tv_gameGiftBagTitle"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="13dp"
+        android:max="100"
+        android:progress="10"
+        android:progressTint="@color/progress_color"/>
+
+    <TextView
+        android:id="@+id/tv_gameGiftBagInfo"
+        style="@style/ItemInfoTextStyle"
+        android:layout_below="@+id/pb_gift"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="10dp"
+        android:lines="2"
+        android:text="礼包内容：银币*50000、炼器符*5、完璧符*2、极品完璧符*1"
+        />
+
+    <Button
+        android:id="@+id/btn_giftGet"
+        style="@style/SmallButton"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:text="领取"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dividerHeight"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/list_divider"
+        />
+</RelativeLayout>

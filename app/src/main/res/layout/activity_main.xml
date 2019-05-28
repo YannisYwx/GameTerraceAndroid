@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--自定义状态栏 高度-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/search_bg"
+                android:drawableLeft="@mipmap/nav_search"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:hint="王者荣耀"
+                android:paddingBottom="4dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                android:textColorHint="@color/text_gray"
+                android:textSize="14sp"
+                android:layout_marginLeft="14dp"
+                />
+            <ImageView
+                android:id="@+id/iv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/message_selector" />
+            <ImageView
+                android:id="@+id/iv_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/download_home_selector" />
+
+        </LinearLayout>
+
+
+    </LinearLayout><!--这是底部的选项卡-->
+    <RadioGroup
+        android:id="@+id/rg_main_tab"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_main_home"
+            style="@style/TabStyle"
+            android:drawableTop="@drawable/home_selector"
+            android:text="@string/main_tab_home" />
+
+        <RadioButton
+            android:id="@+id/rb_main_classify"
+            style="@style/TabStyle"
+            android:drawableTop="@drawable/sort_selector"
+            android:text="@string/main_tab_classify" />
+
+        <RadioButton
+            android:id="@+id/rb_main_news"
+            style="@style/TabStyle"
+            android:drawableTop="@drawable/news_selector"
+            android:text="@string/main_tab_news" />
+
+        <RadioButton
+            android:id="@+id/rb_main_gift"
+            style="@style/TabStyle"
+            android:drawableTop="@drawable/gift_bag_selector"
+            android:text="@string/main_tab_gift" />
+
+        <RadioButton
+            android:id="@+id/rb_main_me"
+            style="@style/TabStyle"
+            android:drawableTop="@drawable/me_selector"
+            android:text="@string/main_tab_me" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/activity_main_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/rg_main_tab"
+        android:background="@color/silver" />
+
+    <com.yannis.common.widget.NoScrollViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/activity_main_divider"
+        android:layout_below="@id/ll_top"/>
+</RelativeLayout>

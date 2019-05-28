@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:orientation="vertical"
+    android:paddingEnd="11dp"
+    android:paddingStart="11dp">
+
+    <ImageView
+        android:id="@+id/iv_information"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/default_news" />
+
+    <TextView
+        android:id="@+id/tv_information_title"
+        style="@style/ItemTitleTextStyle"
+        android:lines="1"
+        android:text="城市猎人"
+        android:layout_alignTop="@+id/tv_appraisal"
+        android:layout_toEndOf="@+id/iv_information" />
+    <TextView
+        android:id="@+id/tv_appraisal"
+        android:layout_width="40dp"
+        android:layout_height="26dp"
+        android:background="@color/info_appraisal"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:padding="1dp"
+        android:text="8.0"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_game_type"
+        style="@style/ItemInfoTextStyle"
+        android:singleLine="true"
+        android:text="公测|3D|角色扮演"
+        android:textSize="11sp"
+        android:layout_below="@+id/tv_information_title"
+        android:layout_toEndOf="@+id/iv_information" />
+
+    <TextView
+        android:id="@+id/tv_game_info"
+        style="@style/ItemInfoTextStyle"
+        android:layout_alignStart="@+id/tv_information_title"
+        android:layout_below="@+id/tv_game_type"
+        android:singleLine="true"
+        android:text="游戏画面非常Q萌，战斗过程可谓是惊心动魄"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tv_information_typ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_game_info"
+        android:layout_toEndOf="@+id/iv_information"
+        android:background="@color/info_appraisal"
+        android:padding="2dp"
+        android:layout_marginEnd="4dp"
+        android:text="测评"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_information_preview_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="3dp"
+        android:drawableStart="@drawable/icon_eyes"
+        android:layout_alignBaseline="@+id/tv_information_typ"
+        android:layout_toEndOf="@+id/tv_information_typ"
+        android:gravity="center_vertical"
+        android:text="666"
+        android:textColor="@color/textGray"
+        android:textSize="12sp"
+        android:layout_below="@+id/tv_game_info"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_information_time"
+        style="@style/ItemInfoTextStyle"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_game_info"
+        android:text="11-24 12:30" />
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dividerHeight"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dividerColor"
+        />
+</RelativeLayout>

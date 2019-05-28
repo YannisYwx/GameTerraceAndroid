@@ -1,0 +1,131 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+
+static def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    signingConfigs {
+        debug {
+            storeFile file("./game34999.jks")
+            storePassword "Yannis123"
+            keyAlias "Game34999"
+            keyPassword "Yannis123"
+        }
+
+        release {
+            storeFile file("./game34999.jks")
+            storePassword "Yannis123"
+            keyAlias "Game34999"
+            keyPassword "Yannis123"
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.yuemai.game34999"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        resConfigs "zh", "en"
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+    }
+    buildTypes {
+        release {
+            debuggable true
+            minifyEnabled true //启用Proguard
+            shrinkResources true //是否清理无用资源,依赖于minifyEnabled
+            zipAlignEnabled true //是否启用zipAlign压缩
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+        debug {
+            debuggable true
+            minifyEnabled false
+            shrinkResources false //是否清理无用资源,依赖于minifyEnabled
+            zipAlignEnabled false //是否启用zipAlign压缩
+            signingConfig signingConfigs.debug
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "${rootProject.ext.android.appName}_N${rootProject.ext.android.versionName}_C${rootProject.ext.android.versionCode}_${releaseTime()}.apk"
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+    //设置虚拟机堆内存空间大小，避免在编译期间OOM
+    dexOptions {
+        incremental false
+        javaMaxHeapSize "4g"
+    }
+
+    packagingOptions {
+        exclude "lib/mips/librealm-jni.so"
+        exclude "lib/x86/librealm-jni.so"
+        exclude "lib/x86_64/librealm-jni.so"
+    }
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile(rootProject.ext.dependencies['espresso'], {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile rootProject.ext.dependencies['junit']
+    compile project(':common')
+    compile rootProject.ext.dependencies['appcompatV7']
+    compile rootProject.ext.dependencies['supportV4']
+    compile rootProject.ext.dependencies['design']
+    compile rootProject.ext.dependencies['recyclerview']
+    compile rootProject.ext.dependencies['glide']
+    compile rootProject.ext.dependencies['glide-transformations']
+    compile rootProject.ext.dependencies['okhttp3']
+    compile rootProject.ext.dependencies['okhttp-logging-interceptor']
+    compile rootProject.ext.dependencies['takephoto_library']
+    compile rootProject.ext.dependencies['permission']
+    compile rootProject.ext.dependencies['circleimageview']
+    compile rootProject.ext.dependencies['SmartRefreshLayout']
+    compile rootProject.ext.dependencies['SmartRefreshHeader']
+    compile rootProject.ext.dependencies['systembartint']
+    compile rootProject.ext.dependencies['nineoldandroids']
+    compile rootProject.ext.dependencies['butterknife']
+    annotationProcessor rootProject.ext.dependencies['butterknife_compiler']
+    provided 'javax.annotation:javax.annotation-api:1.2'
+    compile rootProject.ext.dependencies['dagger']
+    compile rootProject.ext.dependencies['dagger-compiler']
+    compile rootProject.ext.dependencies['stetho']
+    compile rootProject.ext.dependencies['stetho-okhttp3']
+    compile rootProject.ext.dependencies['cardview']
+    compile rootProject.ext.dependencies['logger']
+    compile rootProject.ext.dependencies['rxPermission']
+    compile rootProject.ext.dependencies['multiline-collapsingtoolbar']
+    annotationProcessor rootProject.ext.dependencies['glide-compiler']
+    implementation project(':magicindicator')
+    implementation files('libs/SocialSDK_QQ_Simplify.jar')
+    implementation files('libs/SocialSDK_Sina_Simplify.jar')
+    implementation files('libs/SocialSDK_WeiXin_Full.jar')
+    implementation files('libs/umeng_social_api.jar')
+    implementation files('libs/umeng_social_net.jar')
+    implementation files('libs/umeng_social_shareview.jar')
+    implementation files('libs/umeng_social_tool.jar')
+    implementation files('libs/wechat-sdk-android-with-mta-1.1.6.jar')
+    implementation files('libs/tbs_sdk_thirdapp_v3.5.0.1004_43500_sharewithdownload_withoutGame_obfs_20170801_113025.jar')
+}

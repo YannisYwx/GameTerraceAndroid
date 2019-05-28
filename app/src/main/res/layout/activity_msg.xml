@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="11dp"
+    android:paddingEnd="7dp"
+    android:paddingStart="7dp"
+    android:paddingTop="11dp">
+
+    <TextView
+        android:id="@+id/tv_msg_title"
+        style="@style/ItemTitleTextStyle"
+        android:text="又有一波任务来袭，强势围观....." />
+    <TextView
+        android:id="@+id/tv_msg_info"
+        style="@style/ItemInfoTextStyle"
+        android:text="2017-11-29 08:08"
+        android:layout_marginTop="5dp" />
+    <TextView
+        style="@style/ItemInfoTextStyle"
+        android:layout_marginTop="11dp"
+        android:text="其实我是个骗子，真的我不骗你！其实我是个骗子，真的我不骗你！其实我是个骗子，真的我不骗你！其实我是个骗子，真的我不骗你！其实我是个骗子，真的我不骗你！其实我是个骗子，真的我不骗你！其实我是个骗子，真的我不骗你！其实我是个骗子，真的我不骗你！其实我是个骗子，真的我不骗你！其实我是个骗子，真的我不骗你！其实我是个骗子，真的我不骗你！其实我是个骗子，真的我不骗你！其实我是个骗子，真的我不骗你！其实我是个骗子，真的我不骗你！其实我是个骗子，真的我不骗你！其实我是个骗子，真的我不骗你！其实我是个骗子，真的我不骗你！其实我是个骗子，真的我不骗你！"
+        android:textColor="@color/text_black"
+        />
+</LinearLayout>

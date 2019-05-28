@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <ImageView
+        android:id="@+id/iv_information"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/default_news"
+        android:transitionName="@string/transition_photos"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/tv_information_title"
+        style="@style/ItemTitleTextStyle"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@id/iv_information"
+        android:lines="2"
+        android:text="秘宝猎人职业猎人玛丽————爆发物理双输出" />
+
+    <TextView
+        android:id="@+id/tv_information_typ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_information_title"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="4dp"
+        android:layout_toRightOf="@+id/iv_information"
+        android:background="@color/info_appraisal"
+        android:padding="1dp"
+        android:text="新闻"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_information_preview_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:layout_toRightOf="@+id/tv_information_typ"
+        android:drawablePadding="3dp"
+        android:drawableStart="@drawable/icon_eyes"
+        android:gravity="center_vertical"
+        android:text="666"
+        android:textColor="@color/textGray"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_information_time"
+        style="@style/ItemInfoTextStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dp"
+        android:text="11-24 12:30" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dividerHeight"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dividerColor" />
+</RelativeLayout>

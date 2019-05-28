@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gapBg">
+
+    <EditText
+        android:id="@+id/ed_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/ed_feedback"
+        android:gravity="left"
+        android:padding="10dp"
+        android:textColor="@color/text_black"
+        android:lineSpacingMultiplier="1.3"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/btn_submitFeedback"
+        style="@style/NormalButton"
+        android:text="@string/submit_feedback" />
+</LinearLayout>

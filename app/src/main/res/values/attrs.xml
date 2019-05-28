@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="icon" format="reference" />
+    <attr name="hasBottomLine" format="boolean" />
+    <attr name="title" format="reference|string" />
+
+
+    <!--编辑框的属性-->
+    <declare-styleable name="NormalEditText">
+        <!-- 定义了一个新的属性,用来指定文本 -->
+        <attr name="text" format="reference|string" />
+        <!-- 定义了一个新的属性,用来指定hint-->
+        <attr name="hint" format="reference|string" />
+        <!--显示密码的图标是否可见-->
+        <attr name="isPswIcon" format="boolean" />
+        <!--删除图标是否可见-->
+        <attr name="isdeletable" format="boolean" />
+        <!--输入类型-->
+        <attr name="inputType" format="enum">
+            <enum name="number" value="1" />
+            <enum name="password" value="2" />
+            <enum name="visible_psw" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <!--标题的样式-->
+    <declare-styleable name="TitleStyle">
+        <!-- 定义了一个新的属性,用来指定title -->
+        <attr name="titleCon" format="reference|string" />
+    </declare-styleable>
+
+    <!--用户界面每个item的样式-->
+    <declare-styleable name="SimpleItem">
+        <!-- 定义了一个新的属性,用来指定左侧文本 -->
+        <attr name="leftText" format="reference|string" />
+        <!-- 定义了一个新的属性,用来指定右侧文本 -->
+        <attr name="rightText" format="reference|string" />
+        <!-- 是否有分割线 -->
+        <attr name="isDivider" format="reference|boolean" />
+        <!--是否有箭头-->
+        <attr name="isArrow" format="reference|boolean" />
+
+        <!--左边图标-->
+        <attr name="drawableLeft" format="reference" />
+    </declare-styleable>
+
+    <!--ItemInfoView-->
+    <declare-styleable name="ItemInfoView">
+        <attr name="title" />
+        <attr name="info" format="reference|string" />
+        <attr name="icon" />
+        <attr name="hasBottomLine" />
+    </declare-styleable>
+
+    <!--下载按钮-->
+    <declare-styleable name="DownloadProgressButton">
+        <attr name="radius" format="dimension" />
+        <attr name="background_color" format="color" />
+        <attr name="background_second_color" format="color" />
+        <attr name="text_color" format="color" />
+        <attr name="text_cover_color" format="color" />
+        <attr name="background_strokeWidth" format="dimension" />
+        <attr name="text_normal" format="string" />
+        <attr name="text_downing" format="string" />
+        <attr name="text_pause" format="string" />
+        <attr name="text_finish" format="string" />
+    </declare-styleable>
+
+    <!-- 分类引导控件 -->
+    <declare-styleable name="ClassifyView">
+        <attr name="cv_view_color" format="color" />
+        <attr name="cv_leftText" format="reference|string" />
+        <attr name="cv_leftTextColor" format="color" />
+        <attr name="cv_rightText" format="reference|string" />
+        <attr name="cv_rightTextColor" format="color" />
+        <attr name="cv_rightTextDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ApkInfoCardView">
+        <attr name="apkIcon" format="reference" />
+        <attr name="apkName" format="string" />
+        <attr name="apkCapacity" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPaddingTopBottom" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsTextSelectedColor" format="color" />
+        <attr name="pstsScaleZoomMax" format="float" />
+        <attr name="pstsSmoothScrollWhenClickTab" format="boolean" />
+        <attr name="pstsIndicatorWrap" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CommonItemView">
+        <attr name="civ_hasBottomLine" format="boolean" />
+        <attr name="civ_dividerPaddingLeft" format="dimension" />
+        <attr name="civ_dividerPaddingRight" format="dimension" />
+        <attr name="civ_hasIndex" format="boolean" />
+        <attr name="civ_dividerColor" format="color" />
+        <attr name="civ_dividerHeight" format="dimension" />
+        <attr name="civ_type" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="copy" value="1" />
+            <enum name="remind" value="2" />
+            <enum name="downloadButton" value="3" />
+            <enum name="downloading" value="4" />
+            <enum name="downloadFinished" value="5" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RubberIndicator">
+        <attr name="smallCircleColor" format="color" />
+        <attr name="largeCircleColor" format="color" />
+        <attr name="outerCircleColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="CircleView">
+        <attr name="cv_color" format="color" />
+        <attr name="cv_radius" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="AvatarImageBehavior">
+        <attr name="finalYPosition" format="dimension"/>
+        <attr name="startXPosition" format="dimension"/>
+        <attr name="startToolbarPosition" format="dimension"/>
+        <attr name="startHeight" format="dimension"/>
+        <attr name="finalHeight" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CollapsingAvatarToolbar">
+        <attr name="collapsedPadding" format="dimension" />
+        <attr name="expandedPadding" format="dimension" />
+
+        <attr name="collapsedImageSize" format="dimension" />
+        <attr name="expandedImageSize" format="dimension" />
+
+        <attr name="collapsedTextSize" format="dimension" />
+        <attr name="expandedTextSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" format="dimension" />
+        <attr name="type">
+            <enum name="circle" value="0" />
+            <enum name="round" value="1" />
+            <enum name="multi" value="3" />
+        </attr>
+        <attr name="angleCount" format="integer" />
+        <attr name="currentAngle" format="integer" />
+    </declare-styleable>
+</resources>
